@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppGuiaCursoDS.View.ComponentesPrimeiro">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout VerticalOptions="Center" Padding="10">
+                <Button Text="Linguagem, Trabalho e Tecnologia" Clicked="Button_Clicked" Style="{StaticResource botaoCinza}"/>
+                <Button Text="Programação e Algoritmos" Clicked="Button_Clicked_1" Style="{StaticResource botaoCinza}"/>
+                <Button Text="Banco de Dados I" Clicked="Button_Clicked_2" Style="{StaticResource botaoCinza}"/>
+                <Button Text="Análise e Projeto de Sistemas" Clicked="Button_Clicked_3" Style="{StaticResource botaoCinza}"/>
+                <Button Text="Design Digital" Clicked="Button_Clicked_4" Style="{StaticResource botaoCinza}"/>
+                <Button Text="Programação Web I" Clicked="Button_Clicked_5" Style="{StaticResource botaoCinza}"/>
+                <Button Text="Fundamentos da Informática" Clicked="Button_Clicked_6" Style="{StaticResource botaoCinza}"/>
+                <Button Text="Técnicas de Programação" Clicked="Button_Clicked_7" Style="{StaticResource botaoCinza}"/>                
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

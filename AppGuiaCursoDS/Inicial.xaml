@@ -10,7 +10,7 @@
             <Label Text="O curso possui 3 módulos e dura 3 anos!"
                    FontSize="Medium"/>
 
-            <Image Source="foto_ds.png" Margin="0,300,0,0"/>
+            <Image Source="foto_ds.png" Margin="0,200,0,0"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

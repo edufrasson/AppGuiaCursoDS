@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using AppGuiaCursoDS.View;
 
 namespace AppGuiaCursoDS
 {
@@ -17,33 +18,87 @@ namespace AppGuiaCursoDS
             Detail = new NavigationPage((Page)Activator.CreateInstance(typeof(Inicial)));
         }
 
-        private void Open_Inicial(object sender, EventArgs e)
+        private async void Open_Inicial(object sender, EventArgs e)
         {
-            Console.WriteLine("a");
+            try
+            {
+                Detail = new NavigationPage((Page)Activator.CreateInstance(typeof(Inicial)));
+                IsPresented = false;
+
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("Ops!", ex.Message, "OK");
+            }
         }
 
-        private void Open_Primeiro(object sender, EventArgs e)
+        private async void Open_Primeiro(object sender, EventArgs e)
         {
-            Console.WriteLine("a");
+            try
+            {
+                Detail = new NavigationPage((Page)Activator.CreateInstance(typeof(ComponentesPrimeiro)));
+                IsPresented = false;
+
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("Ops!", ex.Message, "OK");
+            }
         }
 
-        private void Open_Segundo(object sender, EventArgs e)
+        private async void Open_Segundo(object sender, EventArgs e)
         {
-            Console.WriteLine("a");
+            try
+            {
+                Detail = new NavigationPage((Page)Activator.CreateInstance(typeof(ComponentesSegundo)));
+                IsPresented = false;
+
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("Ops!", ex.Message, "OK");
+            }
         }
 
-        private void Open_Terceiro(object sender, EventArgs e)
+        private async void Open_Terceiro(object sender, EventArgs e)
         {
-            Console.WriteLine("a");
+            try
+            {
+                Detail = new NavigationPage((Page)Activator.CreateInstance(typeof(ComponentesTerceiro)));
+                IsPresented = false;
+
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("Ops!", ex.Message, "OK");
+            }
         }
 
-        private void Open_Vestibulinho(object sender, EventArgs e)
+        private async void Open_Vestibulinho(object sender, EventArgs e)
         {
-            Console.WriteLine("a");
+            try
+            {
+                Detail = new NavigationPage((Page)Activator.CreateInstance(typeof(Vestibulinho)));
+                IsPresented = false;
+
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("Ops!", ex.Message, "OK");
+            }
         }
-        private void Open_Contato(object sender, EventArgs e)
+        private async void Open_Contato(object sender, EventArgs e)
         {
-            Console.WriteLine("a");
+            try
+            {
+                Detail = new NavigationPage((Page)Activator.CreateInstance(typeof(Contato)));
+                IsPresented = false;
+
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("Ops!", ex.Message, "OK");
+            }
         }
     }
 }

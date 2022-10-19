@@ -3,6 +3,38 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppGuiaCursoDS.App">
     <Application.Resources>
+        <ResourceDictionary>
+            <Style x:Key="textoCentralizado" TargetType="Label">
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+                <Setter Property="TextColor" Value="Accent" />
+            </Style>
 
+            <Style x:Key="textoCentralizadoVermelho" TargetType="Label">
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="TextColor" Value="Accent" />
+            </Style>
+
+            <Style x:Key="tituloCentralizadoVermelho" TargetType="Label">
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="TextColor" Value="Accent" />
+            </Style>
+
+            <Style x:Key="botaoTransparente" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="Transparent" />
+            </Style>
+
+            <Style x:Key="botaoVermelho" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#AB0209" />
+                <Setter Property="TextColor" Value="#FFF" />
+                <Setter Property="CornerRadius" Value="5" />
+            </Style>
+
+            <Style x:Key="botaoCinza" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#3E474C" />
+                <Setter Property="TextColor" Value="#FFFFFF" />
+                <Setter Property="CornerRadius" Value="5" />
+            </Style>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>
