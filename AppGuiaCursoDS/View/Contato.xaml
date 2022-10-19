@@ -3,10 +3,29 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppGuiaCursoDS.View.Contato">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout VerticalOptions="CenterAndExpand" Padding="10">
+
+            <Label Text="Etec Francisco Garcia"
+                   FontSize="Title"
+                   FontAttributes="Bold"
+                    VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="CenterAndExpand" />
+
+            <Label Text="R. Humaitá, 1090 - Centro, Jaú - SP"
+                    VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="CenterAndExpand" />
+
+            <Button Text="Tel: (14) 3622-3566"
+                    Margin="10"
+                    Clicked="Button_Clicked" Style="{ StaticResource botaoVermelho }" />
+
+            <Label Text=""
+                    VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="CenterAndExpand" />
+
+            <Label Text="E-mail: e060dir@cps.sp.gov.br"
+                    VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="CenterAndExpand" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
